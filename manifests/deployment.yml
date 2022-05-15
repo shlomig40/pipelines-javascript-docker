@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: shlomigpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: shlomigpipelinesjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: shlomigpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: shlomigpipelinesjavascriptdocker 
+          image: shlomicr.azurecr.io/shlomigpipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
