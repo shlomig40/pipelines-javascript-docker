@@ -16,4 +16,4 @@ spec:
         - name: shlomigpipelinesjavascriptdocker 
           image: shlomicr.azurecr.io/shlomigpipelinesjavascriptdocker
           ports:
-          - containerPort: 80
+          - containerPort: 8080
